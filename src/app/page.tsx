@@ -7,6 +7,7 @@ import Stats from "@/components/home/Stats";
 import Partners from "@/components/home/Partners";
 import AccredianEdge from "@/components/home/AccredianEdge";
 import DomainExpertise from "@/components/home/DomainExpertise";
+import CourseSegmentation from "@/components/home/CourseSegmentation";
 import CATFramework from "@/components/home/CATFramework";
 import HowItWorks from "@/components/home/HowItWorks";
 import FAQs from "@/components/home/FAQs";
@@ -26,6 +27,7 @@ export default function Home() {
         <Partners />
         <AccredianEdge />
         <DomainExpertise />
+        <CourseSegmentation />
         <CATFramework />
         <HowItWorks />
         <FAQs />

@@ -51,8 +51,13 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-[15px] font-bold text-gray-800 hover:text-brand-blue transition-colors whitespace-nowrap">
+            <Link 
+              key={item.name} 
+              href={item.href} 
+              className="group relative text-[15px] font-bold text-gray-800 hover:text-brand-blue transition-colors whitespace-nowrap"
+            >
               {item.name}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full" />
             </Link>
           ))}
           <button 
