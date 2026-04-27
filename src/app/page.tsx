@@ -12,7 +12,7 @@ import CATFramework from "@/components/home/CATFramework";
 import HowItWorks from "@/components/home/HowItWorks";
 import FAQs from "@/components/home/FAQs";
 import Testimonials from "@/components/home/Testimonials";
-import { useModal } from "@/context/ModalContext";
+
 
 export default function Home() {
   return (
