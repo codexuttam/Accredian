@@ -14,7 +14,7 @@ const Footer = () => {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-8">
           <div className="flex flex-col">
-            <Link href="/" className="mb-6 block relative w-48 h-12">
+            <Link href="/" className="mb-6 block relative w-56 h-16">
               <Image 
                 src="/logos/accredian.png" 
                 alt="Accredian" 

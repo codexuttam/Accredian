@@ -38,7 +38,7 @@ const Navbar = () => {
     >
       <div className="container-custom px-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="relative w-40 h-10 md:w-48 md:h-12 overflow-hidden">
+        <Link href="/" className="relative w-52 h-14 md:w-64 md:h-16 overflow-hidden">
           <Image 
             src="/logos/accredian.png" 
             alt="Accredian" 
