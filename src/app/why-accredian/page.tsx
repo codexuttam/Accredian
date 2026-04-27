@@ -1,11 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import Navbar from "@/components/layout/Navbar";
+import StudentNavbar from "@/components/layout/StudentNavbar";
 import Footer from "@/components/layout/Footer";
-import { CheckCircle2, Star, Target, TrendingUp, Users, Zap, Award, BookOpen, Heart, Laptop, GraduationCap } from "lucide-react";
+import { CheckCircle2, Star, Target, TrendingUp, Users, Zap, Award, BookOpen, Heart } from "lucide-react";
 
 const pillars = [
   {
@@ -60,11 +59,11 @@ const values = [
 
 export default function WhyAccredianPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <Navbar />
+    <main className="min-h-screen bg-white text-gray-900">
+      <StudentNavbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden">
+      <section className="relative pt-48 pb-24 overflow-hidden">
         <div className="container-custom px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -80,9 +79,7 @@ export default function WhyAccredianPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="btn-primary text-lg px-10 py-4">Explore Programs</button>
-                <Link href="/" className="bg-white border-2 border-brand-blue text-brand-blue px-10 py-4 rounded-xl font-bold hover:bg-brand-blue/5 transition-all text-lg flex items-center gap-2">
-                   Explore Business Solutions
-                </Link>
+                <button className="bg-white border-2 border-brand-blue text-brand-blue px-10 py-4 rounded-xl font-bold hover:bg-brand-blue/5 transition-all text-lg">Watch Success Stories</button>
               </div>
             </motion.div>
 
@@ -136,6 +133,36 @@ export default function WhyAccredianPage() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Stats Section (Quick View) */}
+      <section className="py-24 bg-brand-blue text-white overflow-hidden relative">
+        <div className="container-custom px-4 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+            <div>
+              <div className="text-5xl font-bold mb-2">10k+</div>
+              <div className="text-blue-100 text-lg">Alumni Base</div>
+            </div>
+            <div>
+              <div className="text-5xl font-bold mb-2">450k+</div>
+              <div className="text-blue-100 text-lg">Monthly Engagement</div>
+            </div>
+            <div>
+              <div className="text-5xl font-bold mb-2">91%</div>
+              <div className="text-blue-100 text-lg">Placement Support</div>
+            </div>
+            <div>
+              <div className="text-5xl font-bold mb-2">4.8/5</div>
+              <div className="text-blue-100 text-lg">Learner Rating</div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Abstract background shapes */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+           <div className="absolute top-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl" />
+           <div className="absolute bottom-10 right-10 w-60 h-60 bg-blue-300 rounded-full blur-3xl" />
         </div>
       </section>
 

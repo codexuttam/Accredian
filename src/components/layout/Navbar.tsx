@@ -17,8 +17,6 @@ const navItems = [
   { name: "Testimonials", href: "/#testimonials" },
 ];
 
-import TopBar from "./TopBar";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -33,13 +31,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="fixed w-full z-50">
-      <TopBar />
-      <nav
-        className={`w-full transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md py-2" : "bg-white py-4 border-b border-gray-50"
-        }`}
-      >
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-white shadow-md py-2" : "bg-white py-4 border-b border-gray-50"
+      }`}
+    >
       <div className="container-custom px-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="relative w-52 h-14 md:w-64 md:h-16 overflow-hidden">
@@ -109,8 +105,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-      </nav>
-    </header>
+    </nav>
   );
 };
 
