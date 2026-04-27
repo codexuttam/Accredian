@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
-import { motion } from "framer-motion";
+import { useModal } from "@/context/ModalContext";
 
 const Hero = () => {
+  const { openModal } = useModal();
+
   return (
     <section id="home" className="pt-24 pb-12 lg:pt-32 lg:pb-20 overflow-hidden">
-      <div className="container-custom">
+      <div className="container-custom px-4">
         <div className="bg-brand-lightBlue rounded-[40px] p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
           {/* Content */}
           <div className="flex-1 z-10">
@@ -35,6 +37,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={openModal}
                 className="btn-primary shadow-xl shadow-brand-blue/20"
               >
                 Enquire Now

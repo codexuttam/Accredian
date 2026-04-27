@@ -15,9 +15,12 @@ const navItems = [
   { name: "Testimonials", href: "#testimonials" },
 ];
 
+import { useModal } from "@/context/ModalContext";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { openModal } = useModal();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,8 +38,8 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex flex-col">
-          <span className="text-2xl font-bold text-brand-blue leading-none">accredian</span>
+        <Link href="/" className="flex flex-col text-brand-blue">
+          <span className="text-2xl font-bold leading-none">accredian</span>
           <span className="text-[10px] text-gray-500 tracking-wider">credentials that matter</span>
         </Link>
 
@@ -47,7 +50,10 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
-          <button className="bg-brand-blue text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-brand-blue/90 transition-all">
+          <button 
+            onClick={openModal}
+            className="bg-brand-blue text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-brand-blue/90 transition-all"
+          >
             Contact Us
           </button>
         </div>
@@ -77,7 +83,15 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <button className="btn-primary w-full mt-4">Contact Us</button>
+            <button 
+              onClick={() => {
+                setIsOpen(false);
+                openModal();
+              }}
+              className="btn-primary w-full mt-4"
+            >
+              Contact Us
+            </button>
           </div>
         </div>
       )}

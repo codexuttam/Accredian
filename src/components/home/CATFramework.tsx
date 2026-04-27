@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Laptop, XCircle, GraduationCap, Briefcase, BookOpen, MousePointer2, Settings2 } from "lucide-react";
 
@@ -47,7 +48,7 @@ const catFramework = [
 const CATFramework = () => {
   return (
     <section id="cat" className="py-24 bg-white">
-      <div className="container-custom">
+      <div className="container-custom px-4">
         {/* Upper Section */}
         <div className="bg-brand-blue rounded-[32px] p-8 md:p-16 text-white mb-24 relative overflow-hidden">
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -56,12 +57,13 @@ const CATFramework = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
                 Strategic Skill <br />Enhancement
               </h2>
-              <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                 <div className="absolute inset-0 bg-blue-900/20" />
-                 {/* Placeholder for content image */}
-                 <div className="w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                    <Laptop className="w-20 h-20 text-white/50" />
-                 </div>
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+                 <Image
+                    src="/images/strategic_skill.png"
+                    alt="Strategic Skill Enhancement"
+                    fill
+                    className="object-cover"
+                 />
               </div>
             </div>
 

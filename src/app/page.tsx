@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
@@ -6,8 +8,14 @@ import Partners from "@/components/home/Partners";
 import AccredianEdge from "@/components/home/AccredianEdge";
 import DomainExpertise from "@/components/home/DomainExpertise";
 import CATFramework from "@/components/home/CATFramework";
+import HowItWorks from "@/components/home/HowItWorks";
+import FAQs from "@/components/home/FAQs";
+import Testimonials from "@/components/home/Testimonials";
+import { useModal } from "@/context/ModalContext";
 
 export default function Home() {
+  const { openModal } = useModal();
+
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -19,10 +27,13 @@ export default function Home() {
         <AccredianEdge />
         <DomainExpertise />
         <CATFramework />
+        <HowItWorks />
+        <FAQs />
+        <Testimonials />
         
         {/* Call to Action Section */}
         <section className="py-24">
-          <div className="container-custom">
+          <div className="container-custom px-4">
             <div className="bg-brand-blue rounded-[40px] p-8 md:p-16 text-center text-white relative overflow-hidden">
                <div className="relative z-10">
                  <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Elevate Your Team?</h2>
@@ -30,10 +41,16 @@ export default function Home() {
                     Join hundreds of forward-thinking enterprises that trust Accredian for their strategic workforce development.
                  </p>
                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="bg-white text-brand-blue px-10 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all text-lg shadow-xl">
+                    <button 
+                      onClick={openModal}
+                      className="bg-white text-brand-blue px-10 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all text-lg shadow-xl"
+                    >
                        Get Started Now
                     </button>
-                    <button className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition-all text-lg">
+                    <button 
+                      onClick={openModal}
+                      className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition-all text-lg"
+                    >
                        Schedule a Demo
                     </button>
                  </div>

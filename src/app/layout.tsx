@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   description: "Next-Gen expertise for your enterprise. Cultivate high-performance teams through expert learning with Accredian's tailored solutions.",
 };
 
+import { ModalProvider } from "@/context/ModalContext";
+import EnquiryModal from "@/components/home/EnquiryModal";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,7 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${plusJakarta.variable} font-inter antialiased text-brand-dark bg-white`}>
-        {children}
+        <ModalProvider>
+          {children}
+          <EnquiryModal />
+        </ModalProvider>
       </body>
     </html>
   );

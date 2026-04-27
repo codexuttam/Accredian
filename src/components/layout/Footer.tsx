@@ -3,7 +3,7 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "luc
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-20 pb-10">
+    <footer id="contact" className="bg-gray-900 text-white pt-20 pb-10">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
@@ -36,10 +36,10 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-6">Quick Links</h3>
             <ul className="space-y-4 text-gray-400 text-sm">
               <li><Link href="#home" className="hover:text-brand-blue transition-colors">Home</Link></li>
+              <li><Link href="#how-it-works" className="hover:text-brand-blue transition-colors">How It Works</Link></li>
+              <li><Link href="#testimonials" className="hover:text-brand-blue transition-colors">Testimonials</Link></li>
               <li><Link href="#edge" className="hover:text-brand-blue transition-colors">Accredian Edge</Link></li>
               <li><Link href="#cat" className="hover:text-brand-blue transition-colors">CAT Framework</Link></li>
-              <li><Link href="#" className="hover:text-brand-blue transition-colors">All Courses</Link></li>
-              <li><Link href="#" className="hover:text-brand-blue transition-colors">Success Stories</Link></li>
             </ul>
           </div>
 
@@ -47,8 +47,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-6">Support</h3>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><Link href="#" className="hover:text-brand-blue transition-colors">Contact Us</Link></li>
-              <li><Link href="#" className="hover:text-brand-blue transition-colors">FAQs</Link></li>
+              <li><Link href="#contact" className="hover:text-brand-blue transition-colors">Contact Us</Link></li>
+              <li><Link href="#faqs" className="hover:text-brand-blue transition-colors">FAQs</Link></li>
               <li><Link href="#" className="hover:text-brand-blue transition-colors">Privacy Policy</Link></li>
               <li><Link href="#" className="hover:text-brand-blue transition-colors">Terms of Service</Link></li>
               <li><Link href="#" className="hover:text-brand-blue transition-colors">Enquire Now</Link></li>
