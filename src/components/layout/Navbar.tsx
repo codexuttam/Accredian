@@ -3,19 +3,18 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useModal } from "@/context/ModalContext";
 
 const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "Stats", href: "#stats" },
-  { name: "Clients", href: "#clients" },
-  { name: "Accredian Edge", href: "#edge" },
-  { name: "CAT", href: "#cat" },
-  { name: "How It Works", href: "#how-it-works" },
-  { name: "FAQs", href: "#faqs" },
-  { name: "Testimonials", href: "#testimonials" },
+  { name: "Home", href: "/#home" },
+  { name: "Stats", href: "/#stats" },
+  { name: "Clients", href: "/#clients" },
+  { name: "Accredian Edge", href: "/#edge" },
+  { name: "CAT", href: "/#cat" },
+  { name: "How It Works", href: "/#how-it-works" },
+  { name: "FAQs", href: "/#faqs" },
+  { name: "Testimonials", href: "/#testimonials" },
 ];
-
-import { useModal } from "@/context/ModalContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +35,7 @@ const Navbar = () => {
         scrolled ? "bg-white shadow-md py-2" : "bg-white/80 backdrop-blur-md py-4"
       }`}
     >
-      <div className="container-custom flex justify-between items-center">
+      <div className="container-custom px-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex flex-col text-brand-blue">
           <span className="text-2xl font-bold leading-none">accredian</span>
@@ -46,13 +45,13 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="nav-link text-sm">
+            <Link key={item.name} href={item.href} className="nav-link text-sm uppercase font-semibold">
               {item.name}
             </Link>
           ))}
           <button 
             onClick={openModal}
-            className="bg-brand-blue text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-brand-blue/90 transition-all"
+            className="bg-brand-blue text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-brand-blue/90 transition-all uppercase"
           >
             Contact Us
           </button>
@@ -72,12 +71,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden bg-white absolute top-full left-0 w-full shadow-lg border-t animate-in slide-in-from-top duration-300">
-          <div className="container-custom py-6 flex flex-col space-y-4">
+          <div className="container-custom py-6 flex flex-col space-y-4 px-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-brand-blue text-lg font-medium"
+                className="text-gray-700 hover:text-brand-blue text-lg font-medium uppercase"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -88,7 +87,7 @@ const Navbar = () => {
                 setIsOpen(false);
                 openModal();
               }}
-              className="btn-primary w-full mt-4"
+              className="btn-primary w-full mt-4 uppercase"
             >
               Contact Us
             </button>

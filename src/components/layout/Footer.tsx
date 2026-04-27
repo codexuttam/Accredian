@@ -1,13 +1,18 @@
+"use client";
+
 import Link from "next/link";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { useModal } from "@/context/ModalContext";
 
 const Footer = () => {
+  const { openModal } = useModal();
+
   return (
-    <footer id="contact" className="bg-gray-900 text-white pt-20 pb-10">
-      <div className="container-custom">
+    <footer id="contact" className="bg-[#1A1A1A] text-white pt-20 pb-10">
+      <div className="container-custom px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
-          <div className="col-span-1 lg:col-span-1">
+          <div className="col-span-1">
             <Link href="/" className="flex flex-col mb-6">
               <span className="text-3xl font-bold text-white leading-none">accredian</span>
               <span className="text-[10px] text-gray-400 tracking-wider">credentials that matter</span>
@@ -31,37 +36,37 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links */}
+          {/* Accredian Column */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-6">Accredian</h3>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><Link href="#home" className="hover:text-brand-blue transition-colors">Home</Link></li>
-              <li><Link href="#how-it-works" className="hover:text-brand-blue transition-colors">How It Works</Link></li>
-              <li><Link href="#testimonials" className="hover:text-brand-blue transition-colors">Testimonials</Link></li>
-              <li><Link href="#edge" className="hover:text-brand-blue transition-colors">Accredian Edge</Link></li>
-              <li><Link href="#cat" className="hover:text-brand-blue transition-colors">CAT Framework</Link></li>
+              <li><Link href="/about" className="hover:text-brand-blue transition-colors">About</Link></li>
+              <li><Link href="#" className="hover:text-brand-blue transition-colors">Career</Link></li>
+              <li><button onClick={openModal} className="hover:text-brand-blue transition-colors text-left uppercase">Contact Us</button></li>
+              <li><Link href="#" className="hover:text-brand-blue transition-colors">Blog</Link></li>
+              <li><Link href="#" className="hover:text-brand-blue transition-colors">Why Accredian</Link></li>
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Support Column */}
           <div>
             <h3 className="text-lg font-bold mb-6">Support</h3>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><Link href="#contact" className="hover:text-brand-blue transition-colors">Contact Us</Link></li>
+              <li><Link href="/privacy" className="hover:text-brand-blue transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-brand-blue transition-colors">Terms of Service</Link></li>
               <li><Link href="#faqs" className="hover:text-brand-blue transition-colors">FAQs</Link></li>
-              <li><Link href="#" className="hover:text-brand-blue transition-colors">Privacy Policy</Link></li>
-              <li><Link href="#" className="hover:text-brand-blue transition-colors">Terms of Service</Link></li>
-              <li><Link href="#" className="hover:text-brand-blue transition-colors">Enquire Now</Link></li>
+              <li><Link href="#" className="hover:text-brand-blue transition-colors">Admission Policy</Link></li>
+              <li><button onClick={openModal} className="hover:text-brand-blue transition-colors text-left">Enquire Now</button></li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Us Column */}
           <div>
             <h3 className="text-lg font-bold mb-6">Contact Us</h3>
             <ul className="space-y-6 text-gray-400 text-sm">
               <li className="flex gap-3">
                 <MapPin className="text-brand-blue shrink-0" size={20} />
-                <span>123 Expert Street, Learning Hub, Cyber City, 560001</span>
+                <span>Office Address: 4th Floor, 250, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana</span>
               </li>
               <li className="flex gap-3">
                 <Phone className="text-brand-blue shrink-0" size={20} />
