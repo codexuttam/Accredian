@@ -17,10 +17,10 @@ const Partners = () => {
     <section id="clients" className="py-20 bg-white overflow-hidden">
       <div className="container-custom px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Our Proven <span className="text-brand-blue">Partnerships</span>
           </h2>
-          <p className="text-gray-500 text-lg">Successful Collaborations With the <span className="text-brand-blue font-semibold">Industry&apos;s Best</span></p>
+          <p className="text-gray-500 text-xl md:text-2xl">Successful Collaborations With the <span className="text-brand-blue font-semibold">Industry&apos;s Best</span></p>
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-x-20 md:gap-y-12">

@@ -59,7 +59,7 @@ const Footer = () => {
           {/* Accredian Column */}
           <div>
             <h3 className="text-lg font-bold mb-6">Accredian</h3>
-            <ul className="space-y-4 text-gray-600 text-[15px] font-medium">
+            <ul className="space-y-4 text-gray-700 text-[17px] font-semibold">
               <li><Link href="/about" className="hover:text-brand-blue transition-colors">About</Link></li>
               <li><Link href="#" className="hover:text-brand-blue transition-colors">Blog</Link></li>
               <li><Link href="#" className="hover:text-brand-blue transition-colors">Why Accredian</Link></li>
@@ -69,7 +69,7 @@ const Footer = () => {
           {/* Contact Us Column */}
           <div>
             <h3 className="text-lg font-bold mb-6">Contact Us</h3>
-            <ul className="space-y-4 text-gray-600 text-[15px] font-medium">
+            <ul className="space-y-4 text-gray-700 text-[17px] font-semibold">
               <li>
                 Email us: <Link href="mailto:enterprise@accredian.com" className="text-brand-blue hover:underline">enterprise@accredian.com</Link>
               </li>
@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="pt-8 border-t border-gray-100 text-center text-gray-500 text-sm font-medium">
+        <div className="pt-8 border-t border-gray-100 text-center text-gray-600 text-base font-semibold">
           <p>© 2026 Accredian A Brand of FullStack Education Pvt Ltd. All Rights Reserved</p>
         </div>
       </div>

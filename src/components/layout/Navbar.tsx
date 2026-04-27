@@ -51,13 +51,13 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-[13px] font-bold text-gray-700 hover:text-brand-blue transition-colors whitespace-nowrap">
+            <Link key={item.name} href={item.href} className="text-[15px] font-bold text-gray-800 hover:text-brand-blue transition-colors whitespace-nowrap">
               {item.name}
             </Link>
           ))}
           <button 
             onClick={openModal}
-            className="bg-brand-blue text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-100"
+            className="bg-brand-blue text-white px-8 py-3 rounded-lg text-[15px] font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-100"
           >
             Enquire Now
           </button>
