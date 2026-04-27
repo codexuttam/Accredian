@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Lightbulb, Users, Target, Zap, Sliders, Monitor, ShieldCheck, Globe } from "lucide-react";
+import { Users, Target, Zap, Sliders, Monitor, ShieldCheck, Globe } from "lucide-react";
 
 const edgeItems = [
   {

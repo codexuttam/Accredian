@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, LineChart, Settings, Layout, DollarSign, Rocket, Shield } from "lucide-react";
+import { Brain, LineChart, Settings, Layout, DollarSign, Rocket } from "lucide-react";
 
 const domains = [
   { name: "Product & Innovation Hub", icon: <Rocket className="w-8 h-8" /> },
@@ -30,7 +30,7 @@ const DomainExpertise = () => {
           {domains.map((domain, index) => (
             <motion.div
               key={index}
-              whileHover={{ y: -5, shadow: "0 10px 25px -5px rgba(26, 115, 232, 0.1)" }}
+              whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(20, 20, 20, 0.1)" }}
               className="bg-white p-8 rounded-2xl border border-gray-100 flex flex-col items-center text-center transition-all duration-300"
             >
               <div className="text-brand-blue mb-5 bg-brand-lightBlue p-4 rounded-xl">

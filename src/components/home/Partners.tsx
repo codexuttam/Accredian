@@ -19,7 +19,7 @@ const Partners = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Our Proven <span className="text-brand-blue">Partnerships</span>
           </h2>
-          <p className="text-gray-500">Successful Collaborations With the <span className="text-brand-blue font-medium">Industry's Best</span></p>
+          <p className="text-gray-500">Successful Collaborations With the <span className="text-brand-blue font-medium">Industry&apos;s Best</span></p>
         </div>
 
         <div className="relative group">

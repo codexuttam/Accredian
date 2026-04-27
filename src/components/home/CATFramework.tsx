@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Laptop, XCircle, GraduationCap, Briefcase, BookOpen, Tool, MousePointer2, Settings2 } from "lucide-react";
+import { Laptop, XCircle, GraduationCap, Briefcase, BookOpen, MousePointer2, Settings2 } from "lucide-react";
 
 const targetAudience = [
   {
