@@ -52,16 +52,16 @@ const AccredianEdge = () => {
   return (
     <section id="edge" className="py-24 bg-white overflow-hidden">
       <div className="container-custom px-4">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-32 md:mb-48">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             The <span className="text-brand-blue">Accredian Edge</span>
           </h2>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-lg md:text-xl">
             Key Aspects of <span className="text-brand-blue font-semibold">Our Strategic Training</span>
           </p>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-7xl mx-auto">
           {/* Main Container for Steps */}
           <div className="flex flex-col lg:flex-row items-center justify-between relative gap-12 lg:gap-0">
             {edgeItems.map((item, index) => (
@@ -79,13 +79,13 @@ const AccredianEdge = () => {
 
                 {/* Top Content (Desktop alternate) */}
                 {index % 2 === 0 && (
-                  <div className="hidden lg:block absolute bottom-full mb-8 w-48 text-center">
+                  <div className="hidden lg:block absolute bottom-[120%] mb-4 w-48 text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
                     <div className="flex items-center justify-center gap-2 mb-2">
                        <div className="w-2 h-2 rounded-full bg-brand-blue" />
                        <h3 className="font-bold text-[15px]">{item.title}</h3>
                     </div>
                     <p className="text-[13px] text-gray-500 leading-relaxed">{item.desc}</p>
-                    <div className="w-px h-8 bg-brand-blue/30 mx-auto mt-4" />
+                    <div className="w-px h-12 bg-gradient-to-t from-brand-blue/40 to-transparent mx-auto mt-4" />
                   </div>
                 )}
 
@@ -102,8 +102,8 @@ const AccredianEdge = () => {
 
                 {/* Bottom Content (Desktop alternate) */}
                 {index % 2 !== 0 && (
-                  <div className="hidden lg:block absolute top-full mt-8 w-48 text-center">
-                    <div className="w-px h-8 bg-brand-blue/30 mx-auto mb-4" />
+                  <div className="hidden lg:block absolute top-[120%] mt-4 w-48 text-center animate-in fade-in slide-in-from-top-4 duration-700">
+                    <div className="w-px h-12 bg-gradient-to-b from-brand-blue/40 to-transparent mx-auto mb-4" />
                     <div className="flex items-center justify-center gap-2 mb-2">
                        <div className="w-2 h-2 rounded-full bg-brand-blue" />
                        <h3 className="font-bold text-[15px]">{item.title}</h3>
