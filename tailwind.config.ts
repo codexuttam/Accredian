@@ -9,8 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: '#1A73E8',
+          dark: '#1557B0',
+          light: '#E8F0FE',
+        },
+        brand: {
+          blue: '#1A73E8',
+          lightBlue: '#F0F7FF',
+          dark: '#111827',
+        }
+      },
+      fontFamily: {
+        inter: ['var(--font-inter)', 'sans-serif'],
+        jakarta: ['var(--font-jakarta)', 'sans-serif'],
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
