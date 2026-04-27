@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import { motion } from "framer-motion";
 import { useModal } from "@/context/ModalContext";
 
 const Hero = () => {
