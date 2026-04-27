@@ -32,7 +32,7 @@ const Partners = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="relative w-32 h-16 md:w-40 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500"
+              className="relative w-32 h-16 md:w-40 md:h-20 flex items-center justify-center hover:scale-110 transition-all duration-500"
             >
               <Image
                 src={partner.logo}
