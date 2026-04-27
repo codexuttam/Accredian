@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, LineChart, Settings, Layout, DollarSign, Rocket } from "lucide-react";
+import { Brain, LineChart, Settings, Layout, DollarSign, Rocket, Users } from "lucide-react";
 
 const domains = [
   { name: "Product & Innovation Hub", icon: <Rocket className="w-8 h-8" /> },
@@ -12,8 +12,6 @@ const domains = [
   { name: "Digital Enterprise", icon: <Layout className="w-8 h-8" /> },
   { name: "Fintech Innovation Lab", icon: <DollarSign className="w-8 h-8" /> },
 ];
-
-import { Users } from "lucide-react";
 
 const DomainExpertise = () => {
   return (

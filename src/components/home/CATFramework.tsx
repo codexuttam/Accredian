@@ -92,7 +92,7 @@ const CATFramework = () => {
 
         <div className="relative">
           {/* Curved Connector (Desktop) */}
-          <svg className="hidden lg:block absolute top-1/2 left-0 w-full h-24 -translate-y-1/2 -z-0" viewBox="0 0 1200 100">
+          <svg className="hidden lg:block absolute top-1/2 left-0 w-full h-24 -translate-y-1/2 z-0" viewBox="0 0 1200 100">
              <path 
                 d="M100,50 Q300,5 500,50 T900,50 T1100,50" 
                 fill="none" 

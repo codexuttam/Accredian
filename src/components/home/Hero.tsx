@@ -54,13 +54,14 @@ const Hero = () => {
                 src="/images/hero_professionals.png"
                 alt="Experts for Enterprise"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover rounded-2xl md:rounded-[32px] shadow-2xl"
                 priority
               />
             </motion.div>
             
             {/* Decorative background elements */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-blue/10 rounded-full blur-3xl -z-1" />
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-blue/10 rounded-full blur-3xl z-[-1]" />
           </div>
         </div>
       </div>

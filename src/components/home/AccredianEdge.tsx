@@ -62,7 +62,7 @@ const AccredianEdge = () => {
         {/* Visual Diagram */}
         <div className="relative mt-20 lg:mt-32">
           {/* Connecting Line (Desktop) */}
-          <div className="hidden lg:block absolute top-[50%] left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-blue/30 to-transparent -translate-y-1/2 -z-0" />
+          <div className="hidden lg:block absolute top-[50%] left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-blue/30 to-transparent -translate-y-1/2 z-0" />
 
           {/* Items Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-16 lg:gap-y-32 gap-x-8">
@@ -95,7 +95,7 @@ const AccredianEdge = () => {
                 </div>
                 
                 {/* Vertical Connector (Desktop) */}
-                <div className={`hidden lg:block absolute left-1/2 -translate-x-1/2 w-0.5 h-16 bg-brand-blue/20 -z-0 transition-all duration-500 group-hover:h-20 group-hover:bg-brand-blue/40 ${
+                <div className={`hidden lg:block absolute left-1/2 -translate-x-1/2 w-0.5 h-16 bg-brand-blue/20 z-0 transition-all duration-500 group-hover:h-20 group-hover:bg-brand-blue/40 ${
                    index >= 4 ? "bottom-full" : "top-full"
                 }`} />
               </motion.div>
