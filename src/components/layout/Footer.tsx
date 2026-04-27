@@ -62,7 +62,7 @@ const Footer = () => {
             <ul className="space-y-4 text-gray-700 text-[17px] font-semibold">
               <li><Link href="/about" className="hover:text-brand-blue transition-colors">About</Link></li>
               <li><Link href="#" className="hover:text-brand-blue transition-colors">Blog</Link></li>
-              <li><Link href="#" className="hover:text-brand-blue transition-colors">Why Accredian</Link></li>
+              <li><Link href="/why-accredian" className="hover:text-brand-blue transition-colors">Why Accredian</Link></li>
             </ul>
           </div>
 
