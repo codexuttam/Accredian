@@ -117,7 +117,7 @@ const FAQs = () => {
               transition={{ duration: 0.4 }}
               className="bg-white"
             >
-              {(faqData as any)[activeTab].map((item: any, idx: number) => (
+              {faqData[activeTab as keyof typeof faqData].map((item, idx) => (
                 <FAQItem key={idx} question={item.question} answer={item.answer} />
               ))}
             </motion.div>

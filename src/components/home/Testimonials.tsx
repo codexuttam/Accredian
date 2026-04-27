@@ -62,7 +62,7 @@ const Testimonials = () => {
               <div className="relative">
                 <Quote className="absolute -top-4 -left-4 w-8 h-8 text-blue-50 -z-0" />
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed relative z-10 italic">
-                  "{item.quote}"
+                  &quot;{item.quote}&quot;
                 </p>
               </div>
             </motion.div>
@@ -88,7 +88,7 @@ const Testimonials = () => {
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3">Want to Learn More About Our Training Solutions?</h3>
-              <p className="text-blue-50 text-lg opacity-90">Get Expert Guidance for Your Team's Success!</p>
+              <p className="text-blue-50 text-lg opacity-90">Get Expert Guidance for Your Team&apos;s Success!</p>
             </div>
           </div>
           

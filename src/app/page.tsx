@@ -15,8 +15,6 @@ import Testimonials from "@/components/home/Testimonials";
 import { useModal } from "@/context/ModalContext";
 
 export default function Home() {
-  const { openModal } = useModal();
-
   return (
     <main className="min-h-screen">
       <Navbar />
