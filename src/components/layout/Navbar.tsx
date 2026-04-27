@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useModal } from "@/context/ModalContext";
@@ -32,28 +33,33 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md py-2" : "bg-white/80 backdrop-blur-md py-4"
+        scrolled ? "bg-white shadow-md py-2" : "bg-white py-4 border-b border-gray-50"
       }`}
     >
       <div className="container-custom px-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex flex-col text-brand-blue">
-          <span className="text-2xl font-bold leading-none">accredian</span>
-          <span className="text-[10px] text-gray-500 tracking-wider">credentials that matter</span>
+        <Link href="/" className="relative w-40 h-10 md:w-48 md:h-12 overflow-hidden">
+          <Image 
+            src="/logos/accredian.png" 
+            alt="Accredian" 
+            fill 
+            className="object-contain object-left"
+            priority
+          />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="nav-link text-sm uppercase font-semibold">
+            <Link key={item.name} href={item.href} className="text-[13px] font-bold text-gray-700 hover:text-brand-blue transition-colors whitespace-nowrap">
               {item.name}
             </Link>
           ))}
           <button 
             onClick={openModal}
-            className="bg-brand-blue text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-brand-blue/90 transition-all uppercase"
+            className="bg-brand-blue text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-100"
           >
-            Contact Us
+            Enquire Now
           </button>
         </div>
 
@@ -71,12 +77,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden bg-white absolute top-full left-0 w-full shadow-lg border-t animate-in slide-in-from-top duration-300">
-          <div className="container-custom py-6 flex flex-col space-y-4 px-4">
+          <div className="container-custom py-6 flex flex-col space-y-4 px-4 font-bold">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-brand-blue text-lg font-medium uppercase"
+                className="text-gray-700 hover:text-brand-blue text-lg"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -87,9 +93,9 @@ const Navbar = () => {
                 setIsOpen(false);
                 openModal();
               }}
-              className="btn-primary w-full mt-4 uppercase"
+              className="bg-brand-blue text-white px-6 py-4 rounded-xl text-lg font-bold w-full mt-4"
             >
-              Contact Us
+              Enquire Now
             </button>
           </div>
         </div>

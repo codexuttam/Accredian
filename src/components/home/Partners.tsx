@@ -1,47 +1,47 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const partners = [
-  { name: "Reliance", logo: "Reliance" },
-  { name: "HCL", logo: "HCL" },
-  { name: "IBM", logo: "IBM" },
-  { name: "CRIF", logo: "CRIF" },
-  { name: "ADP", logo: "ADP" },
-  { name: "Bayer", logo: "Bayer" },
+  { name: "Reliance", logo: "/logos/reliance.png" },
+  { name: "HCL", logo: "/logos/hcl.png" },
+  { name: "IBM", logo: "/logos/ibm.png" },
+  { name: "CRIF", logo: "/logos/crif.png" },
+  { name: "ADP", logo: "/logos/adp.png" },
+  { name: "Bayer", logo: "/logos/bayer.png" },
 ];
 
 const Partners = () => {
   return (
-    <section id="clients" className="py-16 bg-gray-50/50 overflow-hidden">
-      <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <section id="clients" className="py-20 bg-white overflow-hidden">
+      <div className="container-custom px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Our Proven <span className="text-brand-blue">Partnerships</span>
           </h2>
-          <p className="text-gray-500">Successful Collaborations With the <span className="text-brand-blue font-medium">Industry&apos;s Best</span></p>
+          <p className="text-gray-500 text-lg">Successful Collaborations With the <span className="text-brand-blue font-semibold">Industry&apos;s Best</span></p>
         </div>
 
-        <div className="relative group">
-           {/* Simple horizontal scroll/fade marquee effect */}
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 lg:gap-24 opacity-60">
-            {partners.map((partner) => (
-              <motion.div
-                key={partner.name}
-                whileHover={{ scale: 1.1, opacity: 1 }}
-                className="flex items-center grayscale hover:grayscale-0 transition-all duration-300"
-              >
-                <div className="text-2xl md:text-3xl font-black text-gray-400 tracking-tighter">
-                  {partner.name === "Reliance" && <span className="text-amber-800">RELIANCE</span>}
-                  {partner.name === "HCL" && <span className="text-blue-800">HCL</span>}
-                  {partner.name === "IBM" && <span className="text-blue-600 underline decoration-4 underline-offset-4">IBM</span>}
-                  {partner.name === "CRIF" && <span className="text-cyan-600 italic font-serif">CRIF</span>}
-                  {partner.name === "ADP" && <span className="text-red-600 uppercase">ADP</span>}
-                  {partner.name === "Bayer" && <span className="text-green-600 ring-2 ring-green-600 rounded-full px-2">Bayer</span>}
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-x-20 md:gap-y-12">
+          {partners.map((partner, index) => (
+            <motion.div
+              key={partner.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+              className="relative w-32 h-16 md:w-40 md:h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500"
+            >
+              <Image
+                src={partner.logo}
+                alt={partner.name}
+                fill
+                className="object-contain"
+              />
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
