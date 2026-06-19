@@ -9,7 +9,7 @@ const Hero = () => {
   const { openModal } = useModal();
 
   return (
-    <section id="home" className="pt-24 pb-12 lg:pt-32 lg:pb-20 overflow-hidden">
+    <section id="home" className="pt-28 pb-12 lg:pt-32 lg:pb-20 overflow-hidden">
       <div className="container-custom px-4">
         <div className="bg-brand-lightBlue rounded-[40px] p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
           {/* Content */}
