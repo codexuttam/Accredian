@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 import { useModal } from "@/context/ModalContext";
 
 const navItems = [
-  { name: "Home", href: "/#home" },
+  { name: "Homepage", href: "/#home" },
   { name: "Stats", href: "/#stats" },
   { name: "Clients", href: "/#clients" },
   { name: "The Accredian Edge", href: "/#edge" },
