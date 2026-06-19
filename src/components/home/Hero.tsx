@@ -41,7 +41,7 @@ const Hero = () => {
                 onClick={openModal}
                 className="btn-primary shadow-xl shadow-brand-blue/20"
               >
-                Enquire Now
+                Get Started
               </motion.button>
             </motion.div>
           </div>
