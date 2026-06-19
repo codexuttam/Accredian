@@ -8,7 +8,7 @@ import { useModal } from "@/context/ModalContext";
 
 const navItems = [
   { name: "Homepage", href: "/#home" },
-  { name: "Stats", href: "/#stats" },
+  { name: "Statistics", href: "/#stats" },
   { name: "Clients", href: "/#clients" },
   { name: "The Accredian Edge", href: "/#edge" },
   { name: "CAT", href: "/#cat" },
