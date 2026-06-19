@@ -23,7 +23,7 @@ const Hero = () => {
                 Next-Gen <span className="text-brand-blue">Expertise</span> For Your <span className="text-brand-blue">Organization</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-lg">
-                Cultivate high-performance teams through expert learning.
+                Cultivate high-performance teams through expert learning and development.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
