@@ -20,7 +20,7 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
             >
               <h1 className="heading-primary mb-6">
-                Next-Gen <span className="text-brand-blue">Expertise</span> For Your <span className="text-brand-blue">Enterprise</span>
+                Next-Gen <span className="text-brand-blue">Expertise</span> For Your <span className="text-brand-blue">Organization</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-lg">
                 Cultivate high-performance teams through expert learning.
