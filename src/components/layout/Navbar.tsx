@@ -12,7 +12,7 @@ const navItems = [
   { name: "Clients", href: "/#clients" },
   { name: "The Accredian Edge", href: "/#edge" },
   { name: "CAT", href: "/#cat" },
-  { name: "How It Works", href: "/#how-it-works" },
+  { name: "How We Work", href: "/#how-it-works" },
   { name: "FAQs", href: "/#faqs" },
   { name: "Testimonials", href: "/#testimonials" },
 ];
