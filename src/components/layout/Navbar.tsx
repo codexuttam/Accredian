@@ -14,7 +14,7 @@ const navItems = [
   { name: "CAT", href: "/#cat" },
   { name: "How We Work", href: "/#how-it-works" },
   { name: "FAQs", href: "/#faqs" },
-  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Success Stories", href: "/#testimonials" },
 ];
 
 const Navbar = () => {
