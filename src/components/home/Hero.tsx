@@ -56,7 +56,7 @@ const Hero = () => {
             >
               <Image
                 src="/images/hero_professionals.png"
-                alt="Experts for Enterprise"
+                alt="Experts for Organization"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover rounded-2xl md:rounded-[32px] shadow-2xl"
