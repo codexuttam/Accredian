@@ -20,14 +20,14 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
             >
               <h1 className="heading-primary mb-6">
-                Next-Gen <span className="text-brand-blue">Expertise</span> For Your <span className="text-brand-blue">Organization</span>
+                Next-Generation <span className="text-brand-blue">Excellence</span> For Your Entire <span className="text-brand-blue">Organization</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-lg">
-                Cultivate high-performance teams through expert learning and development.
+                Empower high-performance teams through expert training and development programs.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                {["Tailored Solutions", "Industry Insights", "Expert Guidance"].map((item) => (
+                {["Customized Solutions", "Global Insights", "Professional Guidance"].map((item) => (
                   <div key={item} className="flex items-center gap-2">
                     <CheckCircle2 className="text-green-500 w-5 h-5" />
                     <span className="text-sm font-medium text-gray-700 whitespace-nowrap">{item}</span>
@@ -41,7 +41,7 @@ const Hero = () => {
                 onClick={openModal}
                 className="btn-primary shadow-xl shadow-brand-blue/20"
               >
-                Get Started
+                Start Journey
               </motion.button>
             </motion.div>
           </div>
@@ -56,7 +56,7 @@ const Hero = () => {
             >
               <Image
                 src="/images/hero_professionals.png"
-                alt="Experts for Organization"
+                alt="Professionals for Organization"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover rounded-2xl md:rounded-[32px] shadow-2xl"

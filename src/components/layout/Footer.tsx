@@ -46,9 +46,9 @@ const Footer = () => {
               onClick={openModal}
               className="bg-brand-blue text-white px-10 py-3 rounded-lg font-bold hover:bg-blue-700 transition-all mb-2"
             >
-              Enquire Now
+              Inquire Now
             </button>
-            <p className="text-sm text-gray-500 font-medium">Speak with our Advisor</p>
+            <p className="text-sm text-gray-500 font-medium">Speak with our Expert Advisor</p>
           </div>
         </div>
 
@@ -60,7 +60,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-6">Accredian</h3>
             <ul className="space-y-4 text-gray-700 text-[17px] font-semibold">
-              <li><Link href="/about" className="hover:text-brand-blue transition-colors">About</Link></li>
+              <li><Link href="/about" className="hover:text-brand-blue transition-colors">About Us</Link></li>
               <li><Link href="#" className="hover:text-brand-blue transition-colors">Blog</Link></li>
               <li><Link href="/why-accredian" className="hover:text-brand-blue transition-colors">Why Accredian</Link></li>
             </ul>
@@ -68,13 +68,13 @@ const Footer = () => {
 
           {/* Contact Us Column */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Contact Us</h3>
+            <h3 className="text-lg font-bold mb-6">Get In Touch</h3>
             <ul className="space-y-4 text-gray-700 text-[17px] font-semibold">
               <li>
                 Email us: <Link href="mailto:enterprise@accredian.com" className="text-brand-blue hover:underline">enterprise@accredian.com</Link>
               </li>
               <li>
-                Office Address: 4th Floor, 250, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana
+                Headquarters: 4th Floor, 250, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana
               </li>
             </ul>
           </div>
