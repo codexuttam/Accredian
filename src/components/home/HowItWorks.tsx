@@ -6,7 +6,7 @@ import { BarChart3, Monitor, Tv } from "lucide-react";
 const steps = [
   {
     id: 1,
-    title: "Skill Gap Analysis",
+    title: "Comprehensive Skill Analysis",
     description: "Assess team skill gaps and developmental needs.",
     icon: <BarChart3 className="w-6 h-6 text-white" />,
     color: "bg-brand-blue",
@@ -20,7 +20,7 @@ const steps = [
   },
   {
     id: 3,
-    title: "Flexible Program Delivery",
+    title: "Adaptive Program Delivery",
     description: "Deliver adaptable programs aligned with industry and organizational needs.",
     icon: <Tv className="w-6 h-6 text-white" />,
     color: "bg-brand-blue",
@@ -36,7 +36,7 @@ const HowItWorks = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold mb-4"
+            className="text-4xl md:text-5xl font-bold mb-4"
           >
             How We <span className="text-brand-blue">Deliver Results</span> That Matter?
           </motion.h2>

@@ -16,15 +16,15 @@ export default function PrivacyPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-bold mb-12 text-brand-blue"
           >
-            Privacy Policy
+            Our Privacy Policy
           </motion.h1>
           
           <div className="prose prose-lg max-w-none text-gray-600 space-y-8">
-            <p>Last Updated: April 2026</p>
+            <p>Last Updated: May 2026</p>
             
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
-              <p>Welcome to Accredian. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services.</p>
+              <p>Welcome to Accredian. We value your privacy and are committed to protecting your personal data. This Our Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services.</p>
             </section>
 
             <section>
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Data Security</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Your Data Security</h2>
               <p>We implement industry-standard security measures to protect your data from unauthorized access, loss, or disclosure. However, no method of transmission over the internet is 100% secure.</p>
             </section>
 

@@ -13,7 +13,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Accredian Enterprise | Expert Training for High-Performance Teams",
+  title: "Accredian Enterprise - Expert Training",
   description: "Next-Gen expertise for your enterprise. Cultivate high-performance teams through expert learning with Accredian's tailored solutions.",
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth antialiased">
       <body className={`${inter.variable} ${plusJakarta.variable} font-inter antialiased text-brand-dark bg-white`}>
         <ModalProvider>
           {children}

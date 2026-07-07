@@ -1,12 +1,12 @@
-# Accredian Enterprise Website Recreation
+# Accredian Enterprise Web Application
 
-This project is a high-fidelity recreation of the [Accredian Enterprise](https://enterprise.accredian.com/) landing page, built with modern web technologies and a focus on premium UI/UX.
+This project is a premium recreation of the [Accredian Enterprise](https://enterprise.accredian.com/) landing page, built with modern web technologies and a focus on premium UI/UX.
 
 ## 🚀 Live Demo
 [Live Link (Vercel)](https://accredian-enterprise-recreation.vercel.app/) *(Note: Placeholder link, replacement needed during actual deployment)*
 
 ## 🛠️ Tech Stack
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
@@ -62,4 +62,4 @@ This project was developed with the assistance of **Antigravity**.
 - **Performance Optimization**: Further optimize images and reduce the bundle size of icon libraries.
 
 ---
-Developed by **Uttam** with ❤️ & AI.
+Developed by **Uttam** and Team with ❤️ & AI.
